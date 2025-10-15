@@ -13,7 +13,7 @@ services:
       - mysql-data:/var/lib/mysql   # volume added here
 
   backend:
-    image: puneeth1079/docker-backend:latest
+    image: puneeth1079/stockdocker-backend:latest
     container_name: stockspringboot
     ports:
       - "2025:2001"
@@ -22,7 +22,7 @@ services:
     restart: on-failure
 
   frontend:
-    image: puneeth1079/docker-frontend:latest
+    image: puneeth1079/stockdocker-frontend:latest
     container_name: stockreact
     ports:
       - "3000:80"
