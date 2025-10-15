@@ -12,7 +12,7 @@ const EMPTY_STOCK = {
 };
 
 export default function StockTracker() {
-  const baseUrl = `${config.url}/stockapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/stockapi`;
 
   const [items, setItems] = useState([]);
   const [form, setForm] = useState({ ...EMPTY_STOCK });
