@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import config from "./config.js";
 import "./stock.css";
 
 const EMPTY_STOCK = {
